@@ -33,7 +33,7 @@ Persistent maps and programs (virtual FS) | 4.4 | [`b2197755b263`](https://githu
 BPF attached to tracepoints | 4.7 | [`98b5c2c65c29`](https://github.com/torvalds/linux/commit/98b5c2c65c2951772a8fc661f50d675e450e8bce) | S01E21
 Direct packet access | 4.7 | [`969bf05eb3ce`](https://github.com/torvalds/linux/commit/969bf05eb3cedd5a8d4b7c346a85c2ede87a6d6d) | S01E27
 XDP (see below) | 4.8 | [`6a773a15a1e8`](https://github.com/torvalds/linux/commit/6a773a15a1e8874e5eccd2f29190c31085912c95) | S01E28
-BPF attached to perf events | 4.9 | [`0515e5999a46`](https://github.com/torvalds/linux/commit/0515e5999a466dfe6e1924f460da599bb6821487) | S01E34
+BPF attached to perf events | 4.9 | [`0515e5999a46`](https://github.com/torvalds/linux/commit/0515e5999a466dfe6e1924f460da599bb6821487) | S01E30
 Hardware offload for `tc`'s `cls_bpf` | 4.9 | [`332ae8e2f6ec`](https://github.com/torvalds/linux/commit/332ae8e2f6ecda5e50c5c62ed62894963e3a83f5)
 Verifier exposure and internal hooks | 4.9 | [`13a27dfc6697`](https://github.com/torvalds/linux/commit/13a27dfc669724564aafa2699976ee756029fed2)
 BPF attached to cgroups for socket filtering | 4.10 | [`0e33661de493`](https://github.com/torvalds/linux/commit/0e33661de493db325435d565a4a722120ae4cbf3) | S01E29
@@ -104,7 +104,7 @@ struct ops                     | 5.6  | [`27ae7997a661`](https://github.com/torv
 extensions                     | 5.6  | [`be8704ff07d2`](https://github.com/torvalds/linux/commit/be8704ff07d2374bcc5c675526f95e70c6459683) | BPF_PROG_TYPE_EXT
 LSM                            | 5.7  | [`fc611f47f218`](https://github.com/torvalds/linux/commit/fc611f47f2188ade2b48ff6902d5cce8baac0c58) | BPF_PROG_TYPE_LSM | S01E31
 lookup listening socket        | 5.9  | [`e9ddbb7707ff`](https://github.com/torvalds/linux/commit/e9ddbb7707ff5891616240026062b8c1e29864ca) | BPF_PROG_TYPE_SK_LOOKUP
-Allow executing syscalls       | 5.15 | [`79a7f8bdb159`](https://github.com/torvalds/linux/commit/79a7f8bdb159d9914b58740f3d31d602a6e4aca8) | BPF_PROG_TYPE_SYSCALL | S01E30
+Allow executing syscalls       | 5.15 | [`79a7f8bdb159`](https://github.com/torvalds/linux/commit/79a7f8bdb159d9914b58740f3d31d602a6e4aca8) | BPF_PROG_TYPE_SYSCALL | S01E32
 
 ## Maps (_a.k.a._ Tables, in BCC lingo)
 
