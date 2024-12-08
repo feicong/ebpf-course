@@ -1,4 +1,14 @@
+# Copyright (c) 2024-2025 fei_cong(https://github.com/feicong/ebpf-course)
 FROM mcr.microsoft.com/devcontainers/base:jammy
+LABEL maintainer=feicong
 
-# Install packages
-RUN apt-get update && apt-get install -y xz-utils make tree curl wget git build-essential gdb llvm clang libelf1 libelf-dev zlib1g-dev libbfd-dev libcap-dev
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ="Asia/Shanghai"
+
+COPY build.sh /build.sh
+RUN bash /build.sh && rm /build.sh
+
+RUN apt clean \
+    && rm -rf /var/lib/apt/lists/*
+
+CMD ["bash"]
