@@ -12,12 +12,19 @@ eBPF安全开发与攻防对抗系列（已完结）
 
 ## 非虫出版的图书
 
+点击图片跳转正版购买链接
+
 <div align="center">
-	<img src="https://github.com/user-attachments/assets/d03b87af-977e-45ad-873e-d1049c495b23" alt="Android软件安全与逆向分析" width="25%" style="max-width: 300px;">
-	<img src="https://github.com/user-attachments/assets/008e9cb4-2e4e-4ebe-b24c-5f46d79d3870" alt="Android软件安全权威指南" width="25%" style="max-width: 300px;">
 	<a href="https://item.jd.com/11186337.html">
-	<img src="https://github.com/user-attachments/assets/6af7426f-5e62-45d1-90f4-0d1ba1368b30" alt="macOS软件安全与逆向分析" width="25%" style="max-width: 300px;">
+	<img src="https://github.com/user-attachments/assets/d03b87af-977e-45ad-873e-d1049c495b23" alt="Android软件安全与逆向分析" width="25%" style="max-width: 300px;">
 	</a>
+
+ 	<a href="https://item.jd.com/12522178.html">
+	<img src="https://github.com/user-attachments/assets/008e9cb4-2e4e-4ebe-b24c-5f46d79d3870" alt="Android软件安全权威指南" width="25%" style="max-width: 300px;">
+	</a>
+ 
+	<img src="https://github.com/user-attachments/assets/6af7426f-5e62-45d1-90f4-0d1ba1368b30" alt="macOS软件安全与逆向分析" width="25%" style="max-width: 300px;">
+ 
 	<a href="https://item.jd.com/10132040684560.html">
 	<img src="https://github.com/user-attachments/assets/c1130b54-e600-45e0-ae85-10d82b8706cb" alt="eBPF开发指南从原理到应用" width="25%" style="max-width: 300px;">
 	</a>
