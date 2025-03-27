@@ -1,0 +1,97 @@
+// Copyright (c) 2024-2025 fei_cong(https://github.com/feicong/ebpf-course)
+{
+	"name": "ebpf-course-devcontainer",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//"image": "fsx199/vsc-ebpf-course-env:latest",
+	"build": {
+		"context": ".",
+        "dockerfile": "./Dockerfile",
+		"options": [
+            // "--platform=linux/amd64"
+        ],
+		// "cacheFrom": "fsx199/ebpf-course-env:latest",
+		"args": {
+			// "http_proxy": "http://192.168.0.120:7890",
+			// "https_proxy": "http://192.168.0.120:7890"
+		}
+    },
+	"containerEnv": {
+		// "HTTP_PROXY": "${localEnv:http_proxy}",
+		// "HTTPS_PROXY": "${localEnv:http_proxy}",
+		// "http_proxy": "${localEnv:http_proxy}",
+		// "https_proxy": "${localEnv:http_proxy}"
+	},
+	
+	"runArgs": [
+		"--cap-add=SYS_PTRACE", 
+		"--security-opt", 
+		"seccomp=unconfined",
+		"--volume=/var/lib/docker",
+        "--privileged"
+	],
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"twxs.cmake",
+				"ms-vscode.cmake-tools",
+				"formulahendry.code-runner",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.makefile-tools",
+				"ms-azuretools.vscode-docker",
+				"mesonbuild.mesonbuild",
+				"ms-python.debugpy",
+				"vadimcn.vscode-lldb",
+				"DavidAnson.vscode-markdownlint",
+				"MS-CEINTL.vscode-language-pack-zh-hans",
+				"GitHub.codespaces",
+				"redhat.vscode-yaml",
+				"ms-python.vscode-pylance",
+				"codezombiech.gitignore",
+				"rogalmic.bash-debug",
+				"ms-vscode-remote.remote-containers",
+				"bpfdeploy.bpftrace",
+				"github.remotehub",
+				"ms-vscode-remote.remote-ssh",
+				"ms-vscode-remote.remote-ssh-edit",
+				"ms-vscode-remote.vscode-remote-extensionpack",
+				"ms-vscode.remote-server",
+				"ms-vscode.remote-explorer",
+				"ms-vscode.remote-repositories",
+				"vscode-icons-team.vscode-icons",
+				"ms-vscode-remote.remote-wsl",
+				"github.vscode-github-actions",
+				"golang.go",
+				"ms-python.isort",
+				"redhat.vscode-xml",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.hexeditor",
+				"foxundermoon.shell-format"
+			]
+		}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+        //"ghcr.io/devcontainers/features/github-cli": "latest",
+        // "ghcr.io/devcontainers/features/docker-in-docker": "latest"
+        //"ghcr.io/devcontainers/features/python": "3.10",
+		//"ghcr.io/devcontainers/features/go:1": {
+        //	"version": "1.23.1"
+		//}//,
+		// "ghcr.io/devcontainers/features/node:1": {
+		// 	"version": "20"
+		// }
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "uname -a && echo 'https://github.com/feicong/ebpf-course by feicong.'",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode"
+}
